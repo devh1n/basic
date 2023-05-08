@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<!--
+    show는 id로 코드에서 하나밖에 없으므로 색 지정 1순위
+    2순위는 class같은 그룹
+    *그룹들이 여러개라면 가장 마지막으로 만들어진 코드가 우선으로 적용됨!
+    일반적으로 위에 적은 코드가 우선 적용될것 같지만 반대라는것을 명심할것!!*
+    3순위는 h1같은 그룹을 제외한 나머지 
+-->
+<head>
+    <title>web-html</title>
+    <meta charest="utf-8">
+    <style>
+        a {
+            color:black;
+        text-decoration: none;
+        }
+        .saw {
+            color:blue;
+        }
+        .active{
+            color: rgb(230, 49, 58);
+        }
+        <!--
+            여기서 active와 saw의 순서를 바꾸면 엄마의 색상이 빨강에서 블루로 변함
+            왜냐면 마지막에 반들어진 코드가 우선적용되기때문!
+            -->
+        h1 {
+            font-size: 60px;
+            text-align: center;
+        }
+        #show {
+            color:rgb(34, 29, 21);
+        }
+    
+    </style>
+</head>
+
+<body>
+    
+<h1>
+    <a href="1.html">home</a>
+</h1>
+<p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mh-0twurNRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+<h2>
+    <a href="https://terms.naver.com/entry.naver?docId=580810&cid=46625&categoryId=46625">2023.5.8 어버이날</a>
+</h2>
+
+<p>
+  
+    <li><a href="2.html" class="saw active" ><strong>엄마</strong></a></font></li>
+
+    <li><a href="3.html" class="saw"><strong>아빠</strong></a></font></li>
+    <li><a href="4.html" id="show"><strong>봉달이</strong></a></li>
+
+
+<!--
+<li><font color="pink"><a href="2.html"><strong>엄마</strong></a></font></li>
+
+<li><font color="blue"><a href="3.html"><strong>아빠</strong></a></font></li>
+
+무시해라
+-->
+
+</p>
+
+<p>
+
+<h3>
+    선물리스트
+</h3>
+<!--
+    체크박스 코드 여깄음!!
+-->
+<input type="checkbox">
+<ol>
+<li>카네이션</li>
+<p style="margin-top:10px;"></p>
+<img src="zkspdltus.jpg" width="20%">
+<br>
+<input type="checkbox">
+
+<li>현금</li>
+<img src="gusrma.jpg" width="30%">
+<p style="margin-bottom:10px;"></p>
+<input type="checkbox">
+
+<li>편지</li>
+<p style="margin-top:10px;"></p>
+<img src="vuswl.jpg" width="40%">
+</ol>
+</p>
+
+</body>
+</html>
