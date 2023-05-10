@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<title>cording-1.html</title>
+<meta charest="utf-8">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<h1><a href="23.5.4-4.html">HOME</a></h1>
+
+<div id="grid">
+<ol>
+    <li><a href="23.5.4-1.html" class="saw" id="show">HTML</a></li>
+    <li><a href="23.5.4-2.html" class="saw active">CSS</a></li>
+    <li><a href="23.5.4-3.html" style="color:grey;">JAVASCRIPT</a></li>
+</ol>
+
+<div id="text">
+<h2>CSS 기초</h2>
+
+<p>
+수업내용 요약 
+<br>
+a href="23.5.4-3.html" style="color:grey;">JAVASCRIPT
+<br>
+여기에서의 style은 css가 아닌 html의 속성
+<br>
+class로 묶은 그룹에만 변화를 주고싶을때는 앞에 . 을 붙이면 된다
+<br>
+class의 속성의 값에는 여러개를 사용할 수 있고 띄어쓰기를 이용해서 구분한다
+<br>
+ 하나의 태그에는 여러개의 속성이 들어갈 수 있고 여러개의 선택자를 통해 하나의 태그를 공동으로 제어할수있음 (좋은 방법은 아님)
+<br>
+ 왜냐하면
+ a href="23.5.4-2.html" class="saw active">css에서 보면
+ saw와 active 두가지에 영향을 받고있지만 active가 더 가까이 있는 명령이기 때문에 빨간색이 적용됨
+ 만약 두개의 순서를 바꾸면 핑크색으로 변함
+<br>
+a href="23.5.4-1.html" class="saw" id="show">HTML
+<br>
+여기에서 show가 saw보다 더 먼 명령이지만 우선순위가 id>class>태그 선택자 이기때문에 id인 파란색이 적용됨
+<br>
+id는 웹페이지에서 딱 하나 뿐이기 때문 태그 선택자보다 class가 더 구체적이기 때문
+<br>
+
+</p>
+
+</div>
+</div>
+</body>
+</html>
