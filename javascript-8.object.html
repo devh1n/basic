@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>javascript-8.object</title>
+  </head>
+  <body>
+    <h1>object (객체)</h1>
+    <h2>object create 객체 생성하는 법</h2>
+
+    <script>
+      //배열을 대괄호 [] 객체는 중괄호 {}
+      var coworkers = {
+        boss: "syhyun",
+        worker: "bongdal",
+      };
+      document.write("boss :" + coworkers.boss + "<br>");
+      document.write("worker :" + coworkers.worker + "<br>");
+      coworkers.counter = "bong-e";
+      document.write("counter :" + coworkers.counter + "<br>");
+      coworkers["data scientist"] = "suhyun";
+      //이름에는 공백 사용 불가
+      //공백을 없애기 위해서 배열에서 정보를 가져올때 사용하는 []를 활용
+      //[]안에 ""를 사용하면 문자취급
+      document.write("data scientist :" + coworkers["data scientist"] + "<br>");
+
+      // . 은 object access operator
+    </script>
+
+    <!--serch keyword - javascript object iterate (순회하다) 모든 객체 가져오기-->
+
+    <h2>iterate(반복하다)</h2>
+    <script>
+      for (var key in coworkers) {
+        //document.write(key + "<br>");
+        document.write(coworkers[key] + "<br>");
+        //document.write(key + ":" + coworkers[key] + "<br>");
+      }
+    </script>
+    <h2>property & method</h2>
+    property(객체에 소속된 변수) - boss, worker, counter, data scientist <br />
+    method(객체에 소속된 함수)- 객체 coworkers, 변수 showAll <br /><br />
+
+    <script>
+      coworkers.showAll = function () {
+        for (var key in this) {
+          document.write(key + ":" + this[key] + "<br>");
+        }
+      };
+      coworkers.showAll();
+      //객체-coworkers에 소속된 함수-showAll
+    </script>
+  </body>
+</html>

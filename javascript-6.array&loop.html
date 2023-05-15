@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>javascript-6.array&loop</title>
+  </head>
+  <body>
+    <h1>array & loop</h1>
+    <script>
+      var mydog = ["귀여운", "강아지", "봉달이", "3살", "천재견", "겸둥이"];
+    </script>
+    <h2>mydog</h2>
+    <!--
+<ul>
+  <li>귀여운</li>
+  <li>강아지</li>
+  <li>봉달이</li>
+  <li>3살</li>
+  <li>천재견</li>
+</ul>
+-->
+    <ul>
+      <script>
+        var i = 0;
+        while (i < mydog.length) {
+          document.write("<li>" + mydog[i] + "</li>");
+          i = i + 1;
+        }
+      </script>
+    </ul>
+
+    <h2>mydog.link</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while (i < mydog.length) {
+          document.write('<li><a href="http://a.com/'+mydog[i]+'">'+mydog[i]+'</a></li>');
+        i = i + 1;
+        }
+      </script>
+    </ul>
+  </body>
+</html>
+
+  </body>
+</html>

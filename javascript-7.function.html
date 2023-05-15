@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta chrset="utf-8" />
+    <title>javascript-7.function</title>
+
+    <script>
+      function darkbrightHandler(self) {
+        var target = document.querySelector("body");
+        if (self.value === "dark") {
+          target.style.backgroundColor = "black";
+          target.style.color = "yellowgreen";
+          self.value = "bright";
+
+          var alist = document.querySelectorAll("a");
+          var i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "yellowgreen";
+            i = i + 1;
+          }
+        } else {
+          target.style.backgroundColor = "white";
+          target.style.color = "black";
+          self.value = "dark";
+
+          var alist = document.querySelectorAll("a");
+          var i = 0;
+          while (i < alist.length) {
+            alist[i].style.color = "black";
+            i = i + 1;
+          }
+        }
+      }
+
+      function BodySetColor(color) {
+        document.querySelector('body').style.color = color;
+      }
+      function BodySetBackgroundColor(color){
+        document.querySelector('body').style.backgroundColor = color;
+      }
+      
+    </script>
+  </head>
+  <body>
+   
+    <input
+      id="dark_bright"
+      type="button"
+      value="change"
+      onclick="
+    darkbrightHandler(this);
+    "
+    />
+
+    <input
+      type="button"
+      value="change"
+      onclick="
+   darkbrightHandler(this);
+    
+    "
+    />
+
+    <h1>function</h1>
+   
+    <p>수업내용 요약
+
+
+<h2>1.function</h2>
+<h2>2.basic</h2>
+<ul>
+    <script>
+        function two() {
+            document.write("<li>2</il>");
+            document.write("<li>3</il>");
+        }
+    document.write("<li>1</il>");
+    two ()
+    document.write("<li>3</il>");
+    two()
+    document.write("<li>4</il>");
+</script>
+    </ul>
+
+<h2>3.parameter (입력, 매개변수)& argument(인자)</h2>
+<script>
+function onepluseone(){
+  document.write(1+1+'<br>');
+}
+onepluseone();
+
+// left, right 를 매개변수 즉, parameter 라고한다
+
+function sum(left, right) {
+  document.write(left+right+'<br>');
+}
+  sum(2,3);
+  sum(5,7);
+
+
+</script>
+
+<h2>4.return(출력)</h2>
+ expression (표현식)
+ <br>
+ <script>
+function sum2(left, right) {
+  return left+right;
+}
+document.write(sum2(2,3)+'<br>');
+document.write('<div style="color:yellowgreen">'+sum2(2,3)+'</div>');
+document.write('<div style="font-size:3rem;">'+sum2(2,3)+'</div>');
+
+document.write(sum2(4,5));
+
+
+
+ </script>
+
+
+
+
+
+</p>
+
+</body>
+</html>

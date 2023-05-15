@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<title>javascript-ex.html</title>
+<meta charest="utf-8">
+
+</head>
+
+<body>
+<h1><a href="23.5.4-4.html">HOME</a></h1>
+<input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor='grey';
+    document.querySelector('body').style.color='yellowgreen';
+">
+<input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+">
+
+<input id="night_day" type="button" value="night" onclick="
+if(document.querySelector('#night_day').value ==='night') {
+    document.querySelector('body').style.backgroundColor='grey';
+    document.querySelector('body').style.color='yellowgreen';
+    document.querySelector('#night_day').value ='day';
+} else { 
+    document.querySelector('body').style.backgroundColor='white'
+    document.querySelector('body').style.color='black';
+    document.querySelector('#night_day').value ='night';
+}
+">
+
+<input type="button" value="night" onclick="
+var target = document.querySelector('body');
+if(this.value ==='night') {
+target.style.backgroundColor='grey';
+target.style.color='yellowgreen';
+this.value ='day';
+} else { 
+target.style.backgroundColor='white'
+target.style.color='black';
+this.value ='night';
+}
+">
+
+<ol>
+    <li><a href="23.5.4-1.html">HTML</a></li>
+    <li><a href="23.5.4-2.html">CSS</a></li>
+    <li><a href="23.5.4-3.html">JAVASCRIPT</a></li>
+</ol>
+
+<h2>JAVASCRIPT 기초</h2>
+Hello world 2023.5.4
+내가 만든 첫 웹페이지에 <strong>귀여운 <u>봉달이</u></strong>를 초대합니다.
+
+<p>수업내용 요약 
+    <ol>
+        <li>number</li>
+        <li>string 문자열</li>
+        <li>comparison operator & boolean</li>
+        비교연산자
+        좌항과 우항을 결합하여 데이터를 만듦
+        <br>
+        왼쪽 1과 오른쪽 1이 같은가? 맞으면 true 틀리면 false
+        <br>true와 false 두 가지 값을 묶어서 boolean 이라고 함
+    
+        <li>HTML 특수 코드 (HTML Character Entity, HTML 문자 단위엔티티)</li>
+        & lt ; = &lt; less than
+        <br>
+        & gt ; = &gt; greater than
+        <br>
+        & nbsp ; = $nbsp; 공백 문자 한칸, 연속해서 쓰면 여러 공백 문자 삽입 가능
+        <br>
+        & amp ; = &amp; amperand(앰퍼센트)
+        <br>
+        & quot ; = &quot; 큰 따옴표 하나
+    </ol>
+</p>
+
+
+
+<input id="dark_bright" type="button" value="change" onclick="
+if (document.querySelector('#dark_bright').value==='dark') {
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='yellowgreen';
+    document.querySelector('#dark_bright').value='bright';
+} else {
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('#dark_bright').value='dark';
+}
+">
+//최종!!!
+
+<input type="button" value="change" onclick="
+var target = document.querySelector('body');
+if (this.value==='dark') {
+    target.style.backgroundColor='black';
+    target.style.color='yellowgreen';
+    this.value='bright';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length) {
+        alist[i].style.color = 'yellowgreen';
+        i = i + 1;
+    }
+
+
+} else {
+   target.style.backgroundColor='white';
+   target.style.color='black';
+   this.value='dark'; 
+
+   var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length) {
+        alist[i].style.color = 'black';
+        i = i + 1;
+    }
+
+   
+}
+
+">
+</body>
+</html>
