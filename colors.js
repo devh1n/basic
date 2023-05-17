@@ -26,7 +26,7 @@ function darkbrightHandler(self) {
   } else {
     Body.setBackgroundColor("white");
     Body.setColor("black");
-
+    self.value = "dark";
     Links.setColor("black");
   }
 }
